@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechNova - Services</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    /* Solución garantizada: cuerpo usa flexbox */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    main.services-section {
+      flex: 1;
+      padding: 80px 20px 120px;
+      background-color: #f9f7f3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    footer {
+      background-color: #f9f7f3;
+      padding: 30px;
+      text-align: center;
+      color: #888;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header-transparent">
+    <div class="logo">
+      <img src="logo.png" alt="TechNova Logo" class="logo-img" />
+      <span>TechNova</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main class="fade-in services-section">
+    <div class="services-intro">
+      <p class="services-label">SERVICES</p>
+      <h2 class="services-title">
+        Our cutting-edge service offerings are shaped by true technology thought leaders<span style="color: #0073e6;">*</span>
+      </h2>
+      <p class="services-subtext">
+        At TechNova, we are constantly evolving our service offerings to ensure they work for the organizations of the future and reflect modern best practice that gives your team the edge.
+      </p>
+    </div>
+
+    <section class="service-grid">
+      <div class="service-card fade-in">
+        <i class="fas fa-code service-icon"></i>
+        <h3>Web Development</h3>
+        <p>Custom websites and platforms optimized for performance, design, and user experience.</p>
+      </div>
+
+      <div class="service-card fade-in">
+        <i class="fas fa-cubes service-icon"></i>
+        <h3>Software Solutions</h3>
+        <p>End-to-end development of enterprise-grade software tailored to your operations.</p>
+      </div>
+
+      <div class="service-card fade-in">
+        <i class="fas fa-shield-alt service-icon"></i>
+        <h3>Cybersecurity</h3>
+        <p>Protect your digital infrastructure with proactive and modern security strategies.</p>
+      </div>
+
+      <div class="service-card fade-in">
+        <i class="fas fa-cloud service-icon"></i>
+        <h3>Cloud Computing</h3>
+        <p>Scalable cloud architecture and migration services for agility and cost efficiency.</p>
+      </div>
+
+      <div class="service-card fade-in">
+        <i class="fas fa-user-tie service-icon"></i>
+        <h3>IT Consulting</h3>
+        <p>Strategic guidance to align your IT infrastructure with business goals.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 TechNova Solutions. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

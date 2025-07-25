@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechNova - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header class="header-transparent">
+    <div class="logo">
+      <img src="logo.png" alt="TechNova Logo" class="logo-img" />
+      <span>TechNova</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+  <main class="blog-page fade-in">
+  <section class="blog-header">
+    <h2>Our Blog</h2>
+    <p>Explore insights, guides, and news on digital transformation and innovation.</p>
+
+    <div class="blog-filters">
+      <button class="filter-button active" data-filter="all">All</button>
+      <button class="filter-button" data-filter="web">Web Dev</button>
+      <button class="filter-button" data-filter="security">Cybersecurity</button>
+      <button class="filter-button" data-filter="cloud">Cloud</button>
+    </div>
+  </section>
+
+  <section class="blog-grid">
+<article class="blog-card fade-in-up" data-category="web">
+  <img src="images/blog1.jpg" alt="Website Tips" class="blog-image" />
+  <div class="blog-card-content">
+    <h3>5 Tips to Improve Your Website</h3>
+    <p class="date">June 25, 2025</p>
+    <p>Learn how to improve layout, speed, and content to grow your business.</p>
+
+    <div class="blog-meta">
+      <img src="images/avatar1.png" alt="Sebastian" class="author-avatar" />
+      <span class="author-name">Sebastián Zavala</span>
+    </div>
+
+    <a href="website-tips.html" class="read-more">Read More →</a>
+  </div>
+</article>
+
+<article class="blog-card fade-in-up" data-category="security">
+  <img src="images/blog2.jpg" alt="Cybersecurity" class="blog-image" />
+  <div class="blog-card-content">
+    <h3>Why Cybersecurity is Important</h3>
+    <p class="date">June 20, 2025</p>
+    <p>Hackers target everyone. Learn modern strategies to protect your business.</p>
+
+    <div class="blog-meta">
+      <img src="images/avatar2.png" alt="Darlen" class="author-avatar" />
+      <span class="author-name">Darlen Mamani</span>
+    </div>
+
+    <a href="cybersecurity.html" class="read-more">Read More →</a>
+  </div>
+
+</article>
+
+<article class="blog-card fade-in-up" data-category="cloud">
+  <image src="images/blog3.jpg" alt="Cloud Computing" class="blog-image" />
+  <div class="blog-card-content">
+    <h3>What is Cloud Computing?</h3>
+    <p class="date">June 10, 2025</p>
+    <p>Discover how the cloud improves flexibility, scalability, and efficiency.</p>
+    
+  <div class="blog-meta">
+    <img src="images/avatar3.png" alt="Axel" class="author-avatar" />
+    <span class="author-name">Axel Manríquez</span>
+  </div>
+
+  <a href="cloud.html" class="read-more">Read More →</a>
+  </div>
+</article>
+
+    <!-- Puedes agregar más artículos aquí -->
+  </section>
+</main>
+  <script src="main.js"></script>
+  <script>
+  function handleScrollAnimation() {
+    const elements = document.querySelectorAll('.fade-in-up');
+    const triggerBottom = window.innerHeight * 0.9;
+
+    elements.forEach(el => {
+      const boxTop = el.getBoundingClientRect().top;
+
+      if (boxTop < triggerBottom) {
+        el.classList.add('visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', handleScrollAnimation);
+  window.addEventListener('load', handleScrollAnimation);
+</script>
+
+  <footer>
+    <p>&copy; 2025 TechNova Solutions. All rights reserved.</p>
+  </footer> 
+</body>
+</html>

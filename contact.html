@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - TechNova</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header class="header-transparent">
+    <div class="logo">
+      <img src="logo.png" alt="TechNova Logo" class="logo-img" />
+      <span>TechNova</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+  <main class="contact-page fade-in">
+    <div class="contact-header">
+      <h2>Let’s connect</h2>
+      <p>Want to work together or have questions? Fill out the form or reach out using our contact info.</p>
+    </div>
+
+    <div class="contact-grid">
+      <form class="contact-form" action="#" method="post">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit" class="hero-button">Send Message</button>
+      </form>
+
+      <div class="contact-details">
+        <h3>Contact Information</h3>
+        <p><i class="fas fa-envelope"></i> supportTechNova@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +56 9 4567 2913</p>
+        <p><i class="fas fa-map-marker-alt"></i> Av. la Tirana 4802, Iquique, Tarapacá</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="homepage-footer">
+    <p>&copy; 2025 TechNova Solutions. All rights reserved.</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
